@@ -7,7 +7,8 @@ def load_library(file_path)
   
   hash= {:get_meaning => {}, :get_emoticon => {}}
   
-  library.each{|
+  library.each{|meaning,emoticons|
+    
   
 end
 
