@@ -3,9 +3,11 @@ require "yaml"
 require "pry"
 
 def load_library(file_path)
-  # code goes here
   library=YAML.load_file(file_path)
-  library
+  
+  hash= {get_meaning => 
+  
+  
 end
 
 def get_japanese_emoticon
