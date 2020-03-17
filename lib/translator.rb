@@ -17,16 +17,15 @@ def get_japanese_emoticon(file_path,emoticon)
   emo_library = load_library(file_path)
   result = emo_library["get_emoticon"][emoticon]
   if result == nil
-    libary["get_emoticon"][emoticon]
-  else
-    "Sorry, that emoticon was not found"
+    result = "Sorry, that emoticon was not found"
   end
+  result
 end
 
 def get_english_meaning(file_path,emoticon)
   emo_library = load_library(file_path)
-  if library["get_meaning"].include?(emoticon)
-    libary["get_meaning"][emoticon]
+  if emo_library["get_meaning"].include?(emoticon)
+    emo_libary["get_meaning"][emoticon]
   else
     "Sorry, that emoticon was not found"
   end
